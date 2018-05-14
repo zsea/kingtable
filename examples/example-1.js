@@ -32,14 +32,25 @@ layui.use(['table', 'layer', 'form', 'laypage', "jquery"], function () {
         size: 20,
         class: "layui-table"
     });
-    var data=[];
+    var data = [];
     for (var i = 0; i < 100000; i++) {
         data.push({
-            name: "岳飞"+i,
+            name: "岳飞" + i,
             mz: "汉",
             time: "2012-5-6",
             lng: null
         });
     }
-    table.push(data,true);
+    table.push(data, true);
+    window.setTimeout(function () {
+        table.set(0, {
+            name: "曾国藩",
+            mz: "汉",
+            time: "1999",
+            lng: "行军打仗"
+        });
+        console.log(table.get(0));
+        console.log(table.get(1));
+        console.log(table.remove(6,1));
+    }, 10000)
 });
