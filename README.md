@@ -13,7 +13,7 @@
 或
 
 ```
-npm install zsupertable
+npm install zsea-king-table
 ```
 
 ### 依赖项

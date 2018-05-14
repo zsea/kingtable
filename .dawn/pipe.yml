@@ -33,4 +33,4 @@ publish:
   - name: shell
     script:
       - dn build
-      - npm pu
+      - npm publish --access=public
