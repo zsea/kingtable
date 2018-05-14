@@ -1,6 +1,6 @@
 {
   "name": "zsea-king-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "支持大量数据显示，轻松显示1W+数据。",
   "main": "./build/index.js",
   "scripts": {

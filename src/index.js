@@ -151,5 +151,7 @@ function KingTable(container, settings) {
     }
   })
 }
-
+if(window){
+  window.KingTable=KingTable;
+}
 export default KingTable;
