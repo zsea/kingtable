@@ -1,0 +1,11 @@
+{
+  "name": "zsupertable",
+  "version": "1.0.0",
+  "description": "支持大量数据显示，轻松显示1W+数据。",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "dn test && dn build -e prod"
+  },
+  "author": "zsea",
+  "license": "MIT"
+}
