@@ -131,6 +131,9 @@ var items=table.remove(index,howmany);
         rowHeight: 40,
         headerHeight: 40,
         size: 20,
-        class: "layui-table"
+        class: "layui-table",
+        props:{
+            "lay-size":"sm"
+        }
     }
 ```
