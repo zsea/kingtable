@@ -84,6 +84,7 @@ var items=table.remove(index,howmany);
 * headerHeight - 表头的高度。
 * size - 一次需要显示的数据量。
 * class - 表格所应用的样式名称。
+* props - Object。kv键值对，将添加到表格属性上。
 
 ##### 列配置
 

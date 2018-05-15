@@ -12,6 +12,11 @@ function KingTable(container, settings) {
   if (settings.class) {
     table.addClass(settings.class);
   }
+  if(settings.props){
+    for(var attr in settings.props){
+      table.attr(attr,settings.props[attr]);
+    }
+  }
   var colgroup = $("<colgroup />"), thread = $("<thead />"), tr = $("<tr />");
   thread.append(tr);
   settings.cols.forEach(function (col) {

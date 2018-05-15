@@ -27,10 +27,13 @@ layui.use(['table', 'layer', 'form', 'laypage', "jquery"], function () {
             title: "格言",
             field: "lng"
         }],
-        rowHeight: 40,
-        headerHeight: 40,
+        rowHeight: 31,
+        headerHeight: 32,
         size: 20,
-        class: "layui-table"
+        class: "layui-table",
+        props: {
+            "lay-size": "sm"
+        }
     });
     var data = [];
     for (var i = 0; i < 100000; i++) {
@@ -51,6 +54,6 @@ layui.use(['table', 'layer', 'form', 'laypage', "jquery"], function () {
         });
         console.log(table.get(0));
         console.log(table.get(1));
-        console.log(table.remove(6,1));
+        console.log(table.remove(6, 1));
     }, 10000)
 });
