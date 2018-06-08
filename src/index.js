@@ -12,9 +12,9 @@ function KingTable(container, settings) {
   if (settings.class) {
     table.addClass(settings.class);
   }
-  if(settings.props){
-    for(var attr in settings.props){
-      table.attr(attr,settings.props[attr]);
+  if (settings.props) {
+    for (var attr in settings.props) {
+      table.attr(attr, settings.props[attr]);
     }
   }
   var colgroup = $("<colgroup />"), thread = $("<thead />"), tr = $("<tr />");
@@ -95,9 +95,12 @@ function KingTable(container, settings) {
       }
       for (var j = 0; j < settings.cols.length; j++) {
         var cel = new_row ? $("<td />") : cels[j];
-        var cel_value=datas[pos + i][settings.cols[j].field];
-        if(settings.cols[j].render){
-          cel_value=settings.cols[j].render(cel_value,datas[pos + i],pos + i);
+        var cel_value = datas[pos + i][settings.cols[j].field];
+        if (settings.cols[j].render) {
+          cel_value = settings.cols[j].render(cel_value, datas[pos + i], pos + i);
+        }
+        if (cel_value === null || cel_value === undefined) {
+          cel_value = "";
         }
         cel.html(cel_value);
         if (new_row) {
@@ -156,7 +159,7 @@ function KingTable(container, settings) {
     }
   })
 }
-if(window){
-  window.KingTable=KingTable;
+if (window) {
+  window.KingTable = KingTable;
 }
 export default KingTable;

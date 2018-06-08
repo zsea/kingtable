@@ -36,7 +36,7 @@ layui.use(['table', 'layer', 'form', 'laypage', "jquery"], function () {
         }
     });
     var data = [];
-    for (var i = 0; i < 100000; i++) {
+    for (var i = 0; i < 5; i++) {
         data.push({
             name: "岳飞" + i,
             mz: "汉",
